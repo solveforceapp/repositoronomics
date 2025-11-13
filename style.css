@@ -1,3 +1,46 @@
+/* A–Z group and service entry styles for index.html */
+.az-group {
+  margin-bottom: 2.5em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #e0e0e0;
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 0.5em;
+  background: #fff;
+  border: 1px solid #000;
+}
+.az-group:last-child {
+  border-bottom: none;
+}
+.service-entry {
+  margin-bottom: 1.5em;
+  padding-left: 0.5em;
+}
+h3 {
+  font-size: 1.5em;
+  color: #764ba2;
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
+  letter-spacing: 0.04em;
+}
+h4 {
+  font-size: 1.15em;
+  color: #222299;
+  margin: 0.2em 0 0.2em 0;
+  font-weight: 600;
+}
+a.cardLink {
+  color: #5a5ad6;
+  text-decoration: none;
+  border-bottom: 1px dotted #764ba2;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+a.cardLink:hover, a.cardLink:focus {
+  color: #764ba2;
+  border-bottom: 2px solid #764ba2;
+  text-decoration: underline;
+}
 /* Menu bar button styles (from index.html) */
 nav[aria-label="Main navigation"] a {
   display: inline-block;

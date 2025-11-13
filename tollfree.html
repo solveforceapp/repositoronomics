@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+      nav[aria-label="Main navigation"] a {
+        display: inline-block;
+        background: #5a5ad6;
+        color: #fff;
+        padding: 0.35em 1.1em;
+        margin: 0 0.2em;
+        border-radius: 0.4em;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
+      }
+      nav[aria-label="Main navigation"] a:hover,
+      nav[aria-label="Main navigation"] a:focus {
+        background: #222299;
+        color: #fff;
+        text-decoration: none;
+      }
+      nav[aria-label="Main navigation"] a.active {
+        text-decoration: underline;
+        background: #222299;
+        color: #fff;
+      }
+    </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toll Free Services | Repositoronomics</title>
@@ -40,140 +65,41 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <main class="container">
-    <section>
-      <h2>Toll Free Numbers & Call Routing</h2>
-      <p>Toll Free Services provide businesses with national and international toll free numbers, advanced call routing, and analytics to enhance customer engagement and support. Make your business more accessible and professional with a dedicated toll free presence.</p>
-    </section>
-    <section>
-      <h3>What are Toll Free Services?</h3>
-      <p>Toll Free Services enable organizations to offer customers a free and easy way to contact them. Calls to toll free numbers are billed to the business, not the caller, making it ideal for customer service, sales, and support hotlines.</p>
-    </section>
-    <section>
-      <h3>Key Features</h3>
-      <ul>
-        <li>National and international toll free numbers (800, 888, 877, etc.)</li>
-        <li>Advanced call routing and IVR</li>
-        <li>Time-of-day and location-based routing</li>
-        <li>Disaster recovery and failover options</li>
-        <li>Real-time call analytics and reporting</li>
-        <li>Integration with VoIP and PBX systems</li>
-        <li>Number porting and vanity numbers</li>
-        <li>24/7 support and management</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Benefits</h3>
-      <ul>
-        <li>Increase customer trust and accessibility</li>
-        <li>Improve brand image with a professional number</li>
-        <li>Enhance customer service and support</li>
-        <li>Track marketing campaigns with unique numbers</li>
-        <li>Scale easily as your business grows</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Use Cases</h3>
-      <ul>
-        <li><strong>Customer Support:</strong> Provide a free, memorable number for help desks and support lines.</li>
-        <li><strong>Sales Hotlines:</strong> Boost inbound sales with easy-to-remember numbers.</li>
-        <li><strong>Marketing Campaigns:</strong> Track ROI with dedicated toll free numbers for each campaign.</li>
-        <li><strong>International Business:</strong> Offer toll free access to global customers.</li>
-        <li><strong>Disaster Recovery:</strong> Ensure business continuity with failover routing.</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Technical Details</h3>
-      <ul>
-        <li>Supports SIP, TDM, and VoIP integration</li>
-        <li>Compatible with cloud and on-premise PBX</li>
-        <li>Redundant network infrastructure</li>
-        <li>API access for call data and management</li>
-        <li>Compliance with FCC and telecom regulations</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Frequently Asked Questions (FAQ)</h3>
-      <h4>What is a toll free number?</h4>
-      <p>A toll free number is a telephone number billed to the business, allowing callers to reach you at no charge.</p>
-      <h4>Can I port my existing number?</h4>
-      <p>Yes, most toll free numbers can be ported from your current provider.</p>
-      <h4>Are international toll free numbers available?</h4>
-      <p>Yes, we offer international toll free numbers in many countries.</p>
-      <h4>Can I get a vanity number?</h4>
-      <p>Yes, custom vanity numbers (e.g., 1-800-MY-BRAND) are available.</p>
-      <h4>How quickly can I set up a new number?</h4>
-      <p>Most numbers can be provisioned within 1 business day.</p>
-    </section>
-    <section>
-      <h3>Example Scenario</h3>
-      <p>Acme Support, a national retailer, implemented Toll Free Services to centralize customer support. With advanced call routing and analytics, they improved response times and customer satisfaction, while tracking marketing effectiveness with unique numbers for each campaign.</p>
-    </section>
-    <section>
-      <h3>Industry Applications</h3>
-      <ul>
-        <li>Retail & E-commerce</li>
-        <li>Healthcare</li>
-        <li>Finance & Banking</li>
-        <li>Travel & Hospitality</li>
-        <li>Professional Services</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Related Services</h3>
-      <ul>
-        <li><a href="voip.html">VoIP Integrator</a></li>
-        <li><a href="sip.html">SIP Trunking</a></li>
-        <li><a href="cloud.html">Cloud Connect</a></li>
-      </ul>
-    </section>
-    <section>
-      <h3>Contact Us</h3>
-      <p>Ready to set up your toll free number? <a href="contact.html">Contact our team</a> for a free consultation and demo.</p>
-    </section>
-    <section>
-      <h3>Resources</h3>
-      <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Toll-free_telephone_number" target="_blank" rel="noopener">What is a Toll Free Number?</a></li>
-        <li><a href="https://www.fcc.gov/consumers/guides/toll-free-services" target="_blank" rel="noopener">FCC Guide to Toll Free Services</a></li>
-      </ul>
-    </section>
-    <section>
-      <h3>Legal & Compliance</h3>
-      <ul>
-        <li>FCC and telecom regulatory compliance</li>
-        <li>Data privacy and security standards</li>
-        <li>Disaster recovery and business continuity</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Glossary</h3>
-      <ul>
-        <li><strong>IVR:</strong> Interactive Voice Response, an automated phone system.</li>
-        <li><strong>PBX:</strong> Private Branch Exchange, a private telephone network.</li>
-        <li><strong>SIP:</strong> Session Initiation Protocol, used for VoIP communications.</li>
-        <li><strong>Vanity Number:</strong> A custom, memorable toll free number.</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Customer Testimonials</h3>
-      <blockquote>“Our new toll free number made it easier for customers to reach us and improved our brand image.”<br>— Customer Service Manager, Acme Support</blockquote>
-      <blockquote>“The analytics and call routing features are top-notch. Highly recommended!”<br>— Marketing Director, Beta Retail</blockquote>
-    </section>
-    <section>
-      <h3>Get Started</h3>
-      <p>Discover how Toll Free Services can benefit your business. <a href="contact.html">Request a demo</a> or <a href="about.html">learn more about our solutions</a>.</p>
-    </section>
-    <!-- Padding for 500+ lines -->
-    <div style="height:2000px;display:block;"></div>
-  </main>
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 SolveForce. Directory powered by Repositoronomics.</p>
-    </div>
-  </footer>
-</body>
-</html>
+        <a href="voip.html">VoIP Integrator</a>
+        <a href="tollfree.html" class="active">Toll Free Services</a>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Toll Free Services | Repositoronomics</title>
+          <meta name="description" content="Toll Free Services: National and international toll-free numbers for customer support and business reach.">
+          <link rel="stylesheet" href="style.css">
+      </section>
+      <section>
+          <nav class="main-nav">
+            <a href="index.html" class="nav-btn">A–Z Directory</a>
+            <a href="voip.html" class="nav-btn">VoIP Integrator</a>
+            <a href="tollfree.html" class="nav-btn active">Toll Free Services</a>
+            <a href="wavelength.html" class="nav-btn">Wavelength Services</a>
+            <a href="xconnect.html" class="nav-btn">Cross Connects</a>
+            <a href="yellowpages.html" class="nav-btn">Yellow Pages</a>
+            <a href="zipstream.html" class="nav-btn">ZipStream</a>
+            <a href="about.html" class="nav-btn">About</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+          </nav>
+          <main>
+            <section class="card">
+              <h1>Toll Free Services</h1>
+              <p>Our Toll Free Services provide businesses with national and international toll-free numbers, making it easy for customers to reach you at no cost. Enhance your customer support and expand your business reach with reliable, scalable toll-free solutions.</p>
+              <h2>Service Highlights</h2>
+              <ul>
+                <li>800, 888, 877, 866, 855, 844, and 833 numbers</li>
+                <li>International toll-free options</li>
+                <li>Advanced call routing and analytics</li>
+                <li>Customizable IVR and voicemail</li>
+                <li>Porting and number management</li>
+              </ul>
+              <h2>Benefits</h2>
+              <p>Toll-free numbers improve customer trust and accessibility, making it easier for clients to connect with your business from anywhere.</p>
+            </section>
+          </main>
+          </body>
+          </html>

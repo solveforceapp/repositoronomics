@@ -82,10 +82,12 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 2rem;
 }
+/* Card style for service pages and home */
 .card {
-  background: rgba(255,255,255,0.98);
+  background: #fff;
+  border: 2px solid #000;
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(102,126,234,0.10);
+  box-shadow: none;
   padding: 2rem 2rem 1.5rem 2rem;
   display: flex;
   flex-direction: column;

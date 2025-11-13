@@ -1,3 +1,27 @@
+/* Menu bar button styles (from index.html) */
+nav[aria-label="Main navigation"] a {
+  display: inline-block;
+  background: #5a5ad6;
+  color: #fff;
+  padding: 0.35em 1.1em;
+  margin: 0 0.2em;
+  border-radius: 0.4em;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
+}
+nav[aria-label="Main navigation"] a:hover,
+nav[aria-label="Main navigation"] a:focus {
+  background: #222299;
+  color: #fff;
+  text-decoration: none;
+}
+nav[aria-label="Main navigation"] a.active {
+  text-decoration: underline;
+  background: #222299;
+  color: #fff;
+}
 /* 404 page styles */
 .notfound-main {
   text-align: center;

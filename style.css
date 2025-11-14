@@ -109,6 +109,8 @@ header {
   top: 0;
   z-index: 100;
   padding: 0.5rem 0;
+  border: 2px solid #000;
+  border-radius: 18px;
 }
 .header-flex {
   display: flex;
@@ -238,6 +240,8 @@ footer {
   color: #667eea;
   font-size: 1rem;
   margin-top: auto;
+  border: 2px solid #000;
+  border-radius: 18px;
 }
 @media (max-width: 600px) {
   .header-flex { flex-direction: column; gap: 1.5rem; padding: 1.2rem 0.5rem; }

@@ -24,7 +24,7 @@ foreach ($row in $csv) {
     $folderMap[$dir] += $row.Name
 }
 
-# 3. For each a–z folder, enforce file presence
+# 3. For each a–z folder, enforce file presence and generate index.html
 foreach ($letter in 'a'..'z') {
     $folder = Join-Path $repoRoot $letter
     if (-not (Test-Path $folder)) { New-Item -ItemType Directory -Path $folder | Out-Null }
@@ -40,12 +40,44 @@ foreach ($letter in 'a'..'z') {
     }
     # Remove extra files
     foreach ($file in $existingFiles) {
-        if ($file -notin $requiredFiles) {
+        if ($file -notin $requiredFiles -and $file -ne 'index.html') {
             Remove-Item (Join-Path $folder $file) -Force
         }
     }
-    # Add .gitkeep if folder is empty
-    $htmlCount = (Get-ChildItem -Path $folder -Filter '*.html' -Name -ErrorAction SilentlyContinue).Count
+    # Generate index.html for the folder
+    $indexPath = Join-Path $folder 'index.html'
+    $links = ''
+    foreach ($file in $requiredFiles | Sort-Object) {
+        $links += '      <li><a href="' + $file + '">' + $file + '</a></li>`n'
+    }
+    $indexHtml = @"
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"UTF-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Terms: $($letter.ToString().ToUpper())</title>
+  <link rel=\"stylesheet\" href=\"../style.css\">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href=\"../index.html\">Home</a> |
+      <a href=\"../about.html\">About</a> |
+      <a href=\"../contact.html\">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Terms: $($letter.ToString().ToUpper())</h1>
+    <ul>
+$links+    </ul>
+  </main>
+</body>
+</html>
+"@
+    Set-Content -Path $indexPath -Value $indexHtml
+    # Add .gitkeep if folder is empty (no .html except index.html)
+    $htmlCount = (Get-ChildItem -Path $folder -Filter '*.html' -Name -ErrorAction SilentlyContinue | Where-Object { $_ -ne 'index.html' }).Count
     if ($htmlCount -eq 0) {
         Set-Content -Path (Join-Path $folder '.gitkeep') -Value ''
     } else {

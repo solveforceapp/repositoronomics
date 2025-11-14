@@ -7,6 +7,25 @@
   <meta name="description" content="Repositoronomics: The SolveForce Directory A–Z for Biotechnology and Neurotechnology. Explore hundreds of terms, definitions, and applications.">
   <link rel="stylesheet" href="style.css">
   <style>
+        .container.header-flex {
+          max-width: 900px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1.1em 2em 1.1em 2em;
+          background: #fff;
+        }
+        .container.header-flex h1 {
+          margin: 0;
+          font-size: 2em;
+          font-weight: 700;
+          color: #6c63ff;
+        }
+        .container.header-flex nav {
+          display: flex;
+          gap: 0.7em;
+        }
     .az-nav {
       margin: 2em 0 2em 0;
       text-align: center;
@@ -116,9 +135,9 @@
       border: 2px solid #000;
       border-radius: 0.5em;
       background: #fff;
-      margin: 1.5em auto 2em auto;
+      margin: 2em auto 1.5em auto;
       max-width: 900px;
-      box-shadow: 0 2px 16px 0 rgba(60,60,120,0.10);
+      box-shadow: none;
     }
     .az-nav a:hover,
     .az-nav a:focus {
@@ -176,16 +195,26 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="container header-flex">
-      <h1>Repositoronomics</h1>
-      <nav aria-label="Main navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="instructions-card">
+    <header>
+      <div class="container header-flex">
+        <h1>Repositoronomics</h1>
+        <nav aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+      .instructions-card {
+        border: 2px solid #000;
+        border-radius: 0.5em;
+        background: #fff;
+        margin: 2em auto 1.5em auto;
+        max-width: 900px;
+        box-shadow: none;
+      }
   <main class="card">
     <h1>Repositoronomics: A–Z Directory</h1>
     <p>Welcome to the SolveForce A–Z Directory, your comprehensive, alphabetically organized resource for biotechnology and neurotechnology terminology. Explore hundreds of original, expertly written definitions and real-world applications. Each term has its own dedicated page for in-depth exploration.</p>

@@ -13,6 +13,36 @@
     }
     .az-nav-list {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #fff;
+      border: 2px solid #000;
+      border-radius: 18px;
+      padding: 0.5em 1em;
+      margin: 1.5em auto 2em auto;
+      box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
+      gap: 0.5em;
+      max-width: 900px;
+    }
+    .az-nav-list a {
+      font-weight: bold;
+      color: #2222ee;
+      text-decoration: underline;
+      font-size: 1.25em;
+      padding: 0.25em 0.7em;
+      border-radius: 0.4em;
+      background: none;
+      border: none;
+      margin: 0 0.1em;
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+    }
+    .az-nav-list a:hover,
+    .az-nav-list a:focus {
+      background: #e0e0e0;
+      color: #222299;
+      text-decoration: underline;
+    }
     .container.header-flex {
       background: #fff;
       margin: 1.5em auto 2em auto;
@@ -31,15 +61,6 @@
       margin: 1.5em auto 2em auto;
       max-width: 900px;
       box-shadow: 0 2px 16px 0 rgba(60,60,120,0.10);
-    }
-      border-radius: 0.4em;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-      box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
-      min-width: 2.2em;
-      text-align: center;
-      /* No border here, only on banner */
     }
     .az-nav a:hover,
     .az-nav a:focus {
@@ -112,36 +133,34 @@
     <p>Welcome to the SolveForce A–Z Directory, your comprehensive, alphabetically organized resource for biotechnology and neurotechnology terminology. Explore hundreds of original, expertly written definitions and real-world applications. Each term has its own dedicated page for in-depth exploration.</p>
     <p>Select a letter below to browse all terms beginning with that letter.</p>
     <nav class="az-nav" aria-label="A–Z Navigation">
-      <ul class="az-nav-list">
-        <li><a href="a/">A</a></li>
-        <li><a href="b/">B</a></li>
-        <li><a href="c/">C</a></li>
-        <li><a href="d/">D</a></li>
-        <li><a href="e/">E</a></li>
-        <li><a href="f/">F</a></li>
-        <li><a href="g/">G</a></li>
-        <li><a href="h/">H</a></li>
-        <li><a href="i/">I</a></li>
-        <li><a href="j/">J</a></li>
-        <li><a href="k/">K</a></li>
-        <li><a href="l/">L</a></li>
-        <li><a href="m/">M</a></li>
-      </ul>
-      <ul class="az-nav-list">
-        <li><a href="n/">N</a></li>
-        <li><a href="o/">O</a></li>
-        <li><a href="p/">P</a></li>
-        <li><a href="q/">Q</a></li>
-        <li><a href="r/">R</a></li>
-        <li><a href="s/">S</a></li>
-        <li><a href="t/">T</a></li>
-        <li><a href="u/">U</a></li>
-        <li><a href="v/">V</a></li>
-        <li><a href="w/">W</a></li>
-        <li><a href="x/">X</a></li>
-        <li><a href="y/">Y</a></li>
-        <li><a href="z/">Z</a></li>
-      </ul>
+      <div class="az-nav-list">
+        <a href="a/">A</a>
+        <a href="b/">B</a>
+        <a href="c/">C</a>
+        <a href="d/">D</a>
+        <a href="e/">E</a>
+        <a href="f/">F</a>
+        <a href="g/">G</a>
+        <a href="h/">H</a>
+        <a href="i/">I</a>
+        <a href="j/">J</a>
+        <a href="k/">K</a>
+        <a href="l/">L</a>
+        <a href="m/">M</a>
+        <a href="n/">N</a>
+        <a href="o/">O</a>
+        <a href="p/">P</a>
+        <a href="q/">Q</a>
+        <a href="r/">R</a>
+        <a href="s/">S</a>
+        <a href="t/">T</a>
+        <a href="u/">U</a>
+        <a href="v/">V</a>
+        <a href="w/">W</a>
+        <a href="x/">X</a>
+        <a href="y/">Y</a>
+        <a href="z/">Z</a>
+      </div>
     </nav>
     <p class="az-note">For a full A–Z list of terms, browse each folder or use your browser's search.</p>
   </main>

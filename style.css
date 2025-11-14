@@ -25,6 +25,7 @@
   padding: 1.2em 0 1em 0;
 }
 /* Standardized A–Z navigation grid */
+/* A–Z navigation as a true 13x2 grid */
 .az-nav-list {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -40,6 +41,11 @@
   max-width: 900px;
   justify-items: center;
   align-items: center;
+}
+
+.az-nav-list a {
+  grid-row: span 1;
+  grid-column: span 1;
 }
 /* Header and navigation standardization */
 .header-flex {

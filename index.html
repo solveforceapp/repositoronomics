@@ -32,18 +32,21 @@
     }
     .az-nav-list {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      gap: 0.7em;
       background: #fff;
       border: 2px solid #000;
       border-radius: 18px;
       padding: 1.2em 1.2em 1.6em 1.2em;
       margin: 2em auto 2em auto;
       box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
-      gap: 0.5em 0.5em;
       width: 100%;
       max-width: 900px;
+    }
+    .az-nav-row {
+      display: flex;
+      gap: 0.5em;
     }
     .az-nav-list a {
       display: flex;
@@ -206,32 +209,36 @@
     <p class="main-desc-note">Select a letter below to browse all terms beginning with that letter.</p>
     <nav class="az-nav" aria-label="A–Z Navigation">
       <div class="az-nav-list">
-        <a href="a/">A</a>
-        <a href="b/">B</a>
-        <a href="c/">C</a>
-        <a href="d/">D</a>
-        <a href="e/">E</a>
-        <a href="f/">F</a>
-        <a href="g/">G</a>
-        <a href="h/">H</a>
-        <a href="i/">I</a>
-        <a href="j/">J</a>
-        <a href="k/">K</a>
-        <a href="l/">L</a>
-        <a href="m/">M</a>
-        <a href="n/">N</a>
-        <a href="o/">O</a>
-        <a href="p/">P</a>
-        <a href="q/">Q</a>
-        <a href="r/">R</a>
-        <a href="s/">S</a>
-        <a href="t/">T</a>
-        <a href="u/">U</a>
-        <a href="v/">V</a>
-        <a href="w/">W</a>
-        <a href="x/">X</a>
-        <a href="y/">Y</a>
-        <a href="z/">Z</a>
+        <div class="az-nav-row">
+          <a href="a/">A</a>
+          <a href="b/">B</a>
+          <a href="c/">C</a>
+          <a href="d/">D</a>
+          <a href="e/">E</a>
+          <a href="f/">F</a>
+          <a href="g/">G</a>
+          <a href="h/">H</a>
+          <a href="i/">I</a>
+          <a href="j/">J</a>
+          <a href="k/">K</a>
+          <a href="l/">L</a>
+          <a href="m/">M</a>
+        </div>
+        <div class="az-nav-row">
+          <a href="n/">N</a>
+          <a href="o/">O</a>
+          <a href="p/">P</a>
+          <a href="q/">Q</a>
+          <a href="r/">R</a>
+          <a href="s/">S</a>
+          <a href="t/">T</a>
+          <a href="u/">U</a>
+          <a href="v/">V</a>
+          <a href="w/">W</a>
+          <a href="x/">X</a>
+          <a href="y/">Y</a>
+          <a href="z/">Z</a>
+        </div>
       </div>
     </nav>
     <p class="az-note">For a full A–Z list of terms, browse each folder or use your browser's search.</p>

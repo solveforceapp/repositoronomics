@@ -37,6 +37,7 @@ foreach ($letter in 'a'..'z') {
         if (-not (Test-Path $filePath)) {
             Set-Content -Path $filePath -Value "<html>\n<head>\n  <title>$file</title>\n  <link rel='stylesheet' href='../style.css'>\n</head>\n<body>\n  <header>\n    <nav>\n      <a href='../index.html'>Home</a>\n    </nav>\n  </header>\n  <main>\n    <h1>$file</h1>\n    <p>Placeholder for $file</p>\n  </main>\n</body>\n</html>"
         }
+        # If file exists, do NOT overwrite (preserve original content)
     }
     # Remove extra files
     foreach ($file in $existingFiles) {

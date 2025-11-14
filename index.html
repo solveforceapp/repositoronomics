@@ -11,13 +11,14 @@
       margin: 2em 0 2em 0;
       text-align: center;
     }
-    .az-nav ul {
+    .az-nav-list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 0.5em;
       list-style: none;
-      justify-content: center;
       padding: 0;
+      margin: 0 0 0.5em 0;
     }
     .az-nav a {
       display: inline-block;
@@ -30,12 +31,24 @@
       font-weight: 500;
       transition: background 0.2s, color 0.2s, box-shadow 0.2s;
       box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
+      min-width: 2.2em;
+      text-align: center;
     }
     .az-nav a:hover,
     .az-nav a:focus {
       background: #222299;
       color: #fff;
       text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .az-nav-list {
+        flex-wrap: wrap;
+        gap: 0.3em;
+      }
+      .az-nav a {
+        padding: 0.35em 0.7em;
+        font-size: 1em;
+      }
     }
     header nav {
       text-align: center;
@@ -87,7 +100,7 @@
     <p>Welcome to the SolveForce A–Z Directory, your comprehensive, alphabetically organized resource for biotechnology and neurotechnology terminology. Explore hundreds of original, expertly written definitions and real-world applications. Each term has its own dedicated page for in-depth exploration.</p>
     <p>Select a letter below to browse all terms beginning with that letter.</p>
     <nav class="az-nav" aria-label="A–Z Navigation">
-      <ul>
+      <ul class="az-nav-list">
         <li><a href="a/">A</a></li>
         <li><a href="b/">B</a></li>
         <li><a href="c/">C</a></li>
@@ -102,7 +115,7 @@
         <li><a href="l/">L</a></li>
         <li><a href="m/">M</a></li>
       </ul>
-      <ul>
+      <ul class="az-nav-list">
         <li><a href="n/">N</a></li>
         <li><a href="o/">O</a></li>
         <li><a href="p/">P</a></li>
@@ -119,64 +132,6 @@
       </ul>
     </nav>
     <p class="az-note">For a full A–Z list of terms, browse each folder or use your browser's search.</p>
-  </main>
-  <footer>
-    <p>&copy; 2025 SolveForce. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Repositoronomics | SolveForce Directory A–Z</title>
-  <meta name="description" content="Repositoronomics: The SolveForce Directory A–Z for Biotechnology and Neurotechnology. Explore hundreds of terms, definitions, and applications.">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav aria-label="Main navigation">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main class="card">
-    <h1>Welcome to the SolveForce A–Z Directory</h1>
-    <section>
-      <p>The SolveForce A–Z Directory is your comprehensive, alphabetically organized resource for biotechnology and neurotechnology terminology. Explore hundreds of original, expertly written definitions and real-world applications for terms spanning genetics, molecular biology, neural engineering, brain science, and more. Each term has its own dedicated page for in-depth exploration.</p>
-      <p>To get started, select a letter below to browse all terms beginning with that letter, or use the search function to find a specific topic.</p>
-      <nav class="az-nav" aria-label="A–Z Navigation">
-        <ul>
-          <li><a href="a.html">A</a></li>
-          <li><a href="b.html">B</a></li>
-          <li><a href="c.html">C</a></li>
-          <li><a href="d.html">D</a></li>
-          <li><a href="e.html">E</a></li>
-          <li><a href="f.html">F</a></li>
-          <li><a href="g.html">G</a></li>
-          <li><a href="h.html">H</a></li>
-          <li><a href="i.html">I</a></li>
-          <li><a href="j.html">J</a></li>
-          <li><a href="k.html">K</a></li>
-          <li><a href="l.html">L</a></li>
-          <li><a href="m.html">M</a></li>
-          <li><a href="n.html">N</a></li>
-          <li><a href="o.html">O</a></li>
-          <li><a href="p.html">P</a></li>
-          <li><a href="q.html">Q</a></li>
-          <li><a href="r.html">R</a></li>
-          <li><a href="s.html">S</a></li>
-          <li><a href="t.html">T</a></li>
-          <li><a href="u.html">U</a></li>
-          <li><a href="v.html">V</a></li>
-          <li><a href="w.html">W</a></li>
-          <li><a href="x.html">X</a></li>
-          <li><a href="y.html">Y</a></li>
-          <li><a href="z.html">Z</a></li>
-        </ul>
-      </nav>
-    </section>
   </main>
   <footer>
     <p>&copy; 2025 SolveForce. All rights reserved.</p>

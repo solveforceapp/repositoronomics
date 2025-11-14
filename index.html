@@ -15,7 +15,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       background: #fff;
       border: 2px solid #000;
       border-radius: 18px;
@@ -23,12 +23,13 @@
       margin: 2em auto 2em auto;
       box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
       max-width: 900px;
-      min-height: 170px;
-      position: relative;
-      gap: 0;
+      min-height: 0;
+      gap: 0.5em 0.5em;
     }
     .az-nav-list a {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: #6c63ff;
       color: #fff;
       font-weight: bold;
@@ -42,7 +43,9 @@
       transition: background 0.18s, color 0.18s, box-shadow 0.18s;
       letter-spacing: 0.04em;
       text-align: center;
-      position: relative;
+      flex: 0 0 calc(100% / 13 - 1em);
+      max-width: 6em;
+      min-width: 3.5em;
     }
     .az-nav-list a:hover,
     .az-nav-list a:focus {
@@ -51,22 +54,7 @@
       text-decoration: underline;
       box-shadow: 0 4px 16px 0 rgba(60,60,120,0.18);
     }
-    /* Keyboard staggered rows */
-    .az-nav-list {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .az-nav-list a:nth-child(n+9):nth-child(-n+16) {
-      margin-top: 2.2em;
-      left: 2.7em;
-    }
-    .az-nav-list a:nth-child(n+17):nth-child(-n+26) {
-      margin-top: 4.4em;
-      left: 5.4em;
-    }
-    .az-nav-list a {
-      position: relative;
-    }
+
     .az-nav-list a {
       display: inline-block;
       background: #6c63ff;

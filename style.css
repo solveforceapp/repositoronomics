@@ -1,3 +1,20 @@
+/* Header and navigation standardization */
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.header-flex h1 {
+  margin: 0;
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-flex nav[aria-label="Main navigation"] {
+  display: inline-block;
+  margin-left: 2em;
+  vertical-align: middle;
+}
 /* A–Z group and service entry styles for index.html */
 .az-group {
   margin-bottom: 2.5em;

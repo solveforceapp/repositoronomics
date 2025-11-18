@@ -6,202 +6,12 @@
   <title>Repositoronomics | A–Z Directory</title>
   <meta name="description" content="Repositoronomics: The SolveForce Directory A–Z for Biotechnology and Neurotechnology. Explore hundreds of terms, definitions, and applications.">
   <link rel="stylesheet" href="style.css">
-  <style>
-        .container.header-flex {
-          max-width: 900px;
-          margin: 0 auto;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 1.1em 2em 1.1em 2em;
-          background: #fff;
-        }
-        .container.header-flex h1 {
-          margin: 0;
-          font-size: 2em;
-          font-weight: 700;
-          color: #6c63ff;
-        }
-        .container.header-flex nav {
-          display: flex;
-          gap: 0.7em;
-        }
-    .az-nav {
-      margin: 2em 0 2em 0;
-      text-align: center;
-    }
-    .az-nav-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.7em;
-      background: #fff;
-      border: 2px solid #000;
-      border-radius: 18px;
-      padding: 1.2em 1.2em 1.6em 1.2em;
-      margin: 2em auto 2em auto;
-      box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
-      width: 100%;
-      max-width: 900px;
-    }
-    .az-nav-row {
-      display: flex;
-      gap: 0.5em;
-    }
-    .az-nav-list a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #6c63ff;
-      color: #fff;
-      font-weight: bold;
-      font-size: 1.25em;
-      text-decoration: none;
-      border-radius: 0.7em;
-      padding: 0.55em 0;
-      margin: 0.35em 0.15em;
-      box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
-      border: none;
-      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
-      letter-spacing: 0.04em;
-      text-align: center;
-      flex: 1 1 7%;
-      min-width: 2.5em;
-      max-width: 6em;
-    }
-    .az-nav-list a:nth-child(14) {
-      flex-basis: 100%;
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: none;
-      box-shadow: none;
-      background: transparent;
-      pointer-events: none;
-      content: '';
-      display: block;
-    }
-    .az-nav-list a:nth-child(14) {
-      flex-basis: 100%;
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: none;
-      box-shadow: none;
-      background: transparent;
-      pointer-events: none;
-      content: '';
-      display: block;
-    }
-    .az-nav-list a:hover,
-    .az-nav-list a:focus {
-      background: #554fd8;
-      color: #fff;
-      text-decoration: underline;
-      box-shadow: 0 4px 16px 0 rgba(60,60,120,0.18);
-    }
-
-    .az-nav-list a {
-      display: inline-block;
-      background: #6c63ff;
-      color: #fff;
-      font-weight: bold;
-      font-size: 1.15em;
-      text-decoration: none;
-      border-radius: 0.6em;
-      padding: 0.55em 1.4em;
-      margin: 0.35em 0.45em;
-      box-shadow: 0 2px 8px 0 rgba(60,60,120,0.10);
-      border: none;
-      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
-      letter-spacing: 0.04em;
-    }
-    .az-nav-list a:hover,
-    .az-nav-list a:focus {
-      background: #554fd8;
-      color: #fff;
-      text-decoration: underline;
-      box-shadow: 0 4px 16px 0 rgba(60,60,120,0.18);
-    }
-    .container.header-flex {
-      background: #fff;
-      margin: 1.5em auto 2em auto;
-      max-width: 900px;
-      box-shadow: 0 2px 16px 0 rgba(60,60,120,0.10);
-      padding: 1.2em 2em 1.2em 2em;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header {
-      border: 2px solid #000;
-      border-radius: 0.5em;
-      background: #fff;
-      margin: 2em auto 1.5em auto;
-      max-width: 900px;
-      box-shadow: none;
-    }
-    .az-nav a:hover,
-    .az-nav a:focus {
-      background: #222299;
-      color: #fff;
-      text-decoration: none;
-    }
-    @media (max-width: 600px) {
-      .az-nav-list {
-        flex-wrap: wrap;
-        gap: 0.3em;
-      }
-      .az-nav a {
-        padding: 0.35em 0.7em;
-        font-size: 1em;
-      }
-    }
-    header nav {
-      text-align: center;
-      margin-bottom: 2em;
-      border-radius: 0.5em;
-      display: inline-block;
-      padding: 0.3em 1em;
-      background: #fff;
-    }
-    header nav a {
-      margin: 0 0.5em;
-      color: #222299;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 0.4em;
-      padding: 0.2em 0.8em;
-      background: #f5f6fa;
-      transition: background 0.2s, color 0.2s;
-    }
-    header nav a.active {
-      text-decoration: underline;
-      background: #e0e0e0;
-    }
-    /* main styles moved to .card for consistency across all pages */
-    body {
-      background: #f5f6fa;
-      font-family: system-ui, sans-serif;
-      color: #222;
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    footer {
-      text-align: center;
-      margin: 2em 0 1em 0;
-      color: #888;
-    }
-  </style>
 </head>
-  <body>
+<body>
   <div class="container symmetrical">
     <div class="boxed header-flex">
       <div class="header-left">
-        <h1>Repositoronomics: A–Z Directory</h1>
+        <h1>Repositoronomics</h1>
       </div>
       <div class="header-center">
         <span class="toll-free">Toll Free: (888) 765-8301</span>
@@ -213,6 +23,7 @@
       </nav>
     </div>
     <div class="boxed content-box">
+      <h2>A–Z Directory</h2>
       <p class="main-desc">Welcome to the SolveForce A–Z Directory, your comprehensive, alphabetically organized resource for biotechnology and neurotechnology terminology. Explore hundreds of original, expertly written definitions and real-world applications. Each term has its own dedicated page for in-depth exploration.</p>
       <p class="main-desc-note">Select a letter below to browse all terms beginning with that letter.</p>
       <nav class="az-nav" aria-label="A–Z Navigation">
@@ -251,3 +62,5 @@
       <p>&copy; 2025 SolveForce. All rights reserved.</p>
     </div>
   </div>
+</body>
+</html>
